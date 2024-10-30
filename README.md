@@ -1,6 +1,14 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 ## EasyShare
+![EasyShare Interface_1](https://github.com/shivangjain03/easyshare/raw/main/easyshare_photo1.png)
+![EasyShare Interface_2](https://github.com/shivangjain03/easyshare/raw/main/easyshare_photo2.png)
+![EasyShare Interface_3](https://github.com/shivangjain03/easyshare/raw/main/easyshare_photo3.png)
+![EasyShare Interface_4](https://github.com/shivangjain03/easyshare/raw/main/easyshare_photo4.png)
+
+
+<video controls src="https://github.com/shivangjain03/easyshare/raw/main/EasyShare_Demo.mp4" width="600">
+    Your browser does not support the video tag.
+</video>
+
 [Click here to view the demo video](https://github.com/shivangjain03/easyshare/raw/main/EasyShare_Demo.mp4)
 
 
