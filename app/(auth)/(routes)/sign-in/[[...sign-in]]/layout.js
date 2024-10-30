@@ -35,7 +35,7 @@ export default function RootLayout() {
                 <div>
                   <main>
                     <SignedOut>
-                      <SignIn routing="hash" forceRedirectUrl="/files"/>
+                      <SignIn routing="hash" forceRedirectUrl="/upload"/>
                     </SignedOut>
                     <SignedIn>
                       <UserButton />
