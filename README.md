@@ -1,6 +1,7 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## EasyShare
+[Click here to view the demo video](https://github.com/shivangjain03/easyshare/raw/main/EasyShare_Demo.mp4)
 
 
 
