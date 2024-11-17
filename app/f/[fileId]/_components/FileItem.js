@@ -26,7 +26,7 @@ function FileItem({file}) {
       text-[14px] mt-5 text-center outline-blue-400'
       onChange={(e)=>setPassword(e.target.value)}
         placeholder='Enter password' />:null}
-        <button href="" className='flex gap-2 p-2 bg-primary text-white
+        <button className='flex gap-2 p-2 bg-primary text-white
         rounded-full w-full items-center hover:bg-blue-600 
         text-[14px] mt-5 text-center justify-center
         disabled:bg-gray-300 '
