@@ -12,24 +12,24 @@ import { use } from 'react';
 function FileView({ params }) {
   const unwrappedParams = use(params);
   const [file, setFile] = useState(null);
-  const { fileId } = unwrappedParams;
+  const fileId = unwrappedParams?.fileId;
 
   useEffect(() => {
+    const getFileInfo = async (fileId) => {
+      const docRef = doc(db, 'uploadedFile', fileId);
+      const docSnap = await getDoc(docRef);
+      if (docSnap.exists()) {
+        console.log("Document data", docSnap.data());
+        setFile(docSnap.data());
+      } else {
+        console.log("No such document");
+      }
+    };
+
     if (fileId) {
       getFileInfo(fileId);
     }
   }, [fileId]);
-
-  const getFileInfo = async (fileId) => {
-    const docRef = doc(db, 'uploadedFile', fileId);
-    const docSnap = await getDoc(docRef);
-    if (docSnap.exists()) {
-      console.log("Document data", docSnap.data());
-      setFile(docSnap.data());
-    } else {
-      console.log("No such document");
-    }
-  };
 
   return (
     <div>
