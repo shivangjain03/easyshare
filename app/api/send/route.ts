@@ -4,13 +4,13 @@ import { Resend } from 'resend';
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(req) {
-  const response = await req.json();
+  const responce = await req.json();
   try {
     const { data, error } = await resend.emails.send({
       from: 'easyshare@resend.dev',
       to: ['shivangjain2005@gmail.com'],
       subject: 'Hey! Your file is all set and waiting for you! 🗂️',
-      react: EmailTemplate({ response }),
+      react: EmailTemplate({ responce }),
     });
 
     if (error) {
