@@ -32,14 +32,11 @@ function FileView({ params }) {
   }, [fileId]);
 
   return (
-    <div>
-      <h1>File View</h1>
-      {file ? (
-        <FileItem file={file} />
-      ) : (
-        <p>Loading...</p>
-      )}
-      <Link href="/">Go back</Link>
+    <div className=' h-screen w-full flex justify-center items-center flex-col'>
+      <Link href="">
+      <Image src='/logo1.png' alt='logo' width={150} height={150} />
+      </Link>
+      <FileItem file={file} />
     </div>
   );
 }
